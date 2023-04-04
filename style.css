@@ -1,0 +1,341 @@
+body {
+    background-color: rgba(32,33,36,1);
+    color:azure;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+  }
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:active {
+    color: white;
+  }
+
+
+header {
+    width: 100%;
+    height: 48px;
+}
+
+/* Menu du dessus */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    padding: 6px;  
+    font-size: 12px;  
+}
+
+
+/* Lien Hypertext (Gmail/ Images */
+
+.hyperlink {
+    display: flex;
+    padding: 4px;
+    
+}
+
+.item {
+    display: flex;
+    padding: 4px;
+    
+}
+
+
+/* Bouttons du menu en haut à droite (More apps, photo de profil */
+
+.top_menu_right {
+    display: flex;
+    /* padding: 8px; */
+}
+
+.item_top_menu_right {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+}
+
+/* Icone More APPS + menu déroulant */
+
+.rond {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.rond img {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rond:hover {
+    background-color: #2f3034;
+}
+
+
+.button_squares {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    fill: white;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+
+
+/* Partie juste en dessous de la nav, là où se trouve le logo Google */
+
+.top_page
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80x;
+}
+
+.logo {
+    max-height: 92px;
+    position: relative;
+    margin-top: 280px;
+    margin-bottom: 20px;
+    
+}
+
+/* Partie juste en dessous du Logo, là où se trouve la barre de recherche */
+
+.center_page {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    
+    border: 1px solid #5f6368;
+}
+
+
+
+.search_barre {
+    background-color: transparent; /* Couleur de fond transparente */
+    border: 2px solid #999; /* Bordure grise de 2 pixels */
+    border-radius: 20px; /* Rayon de courbure de 10 pixels */
+    width: 600px; /* Largeur de 200 pixels */
+    height: 48px; /* Hauteur de 100 pixels */
+    box-sizing: border-box;
+}
+
+.search_barre:hover {
+    background-color: #303134; /* Couleur de fond en survolant */
+}
+
+.search {
+    display: flex;
+    width: 100%; /* Largeur de 100% pour remplir la largeur du rectangle */
+    padding: 12px; /* Espacement intérieur de 12 pixels */
+    padding: 8px;
+    padding-left: 22px;
+    border: none; /* Pas de bordure */
+    outline: none; /* Pas d'effet de focus */
+    font-size: 16px; /* Taille de police de 16 pixels */
+    background-color: transparent; /* Couleur de fond transparente */
+    color: azure;
+}
+
+.search-input {
+    border: none;
+    padding: 4px 8px;
+    width: 460px;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: azure;
+    box-sizing: border-box;
+}
+
+.search_left_icon {
+    height: 22px;
+    margin-right: 10px;
+    padding-top: 4px;
+}
+
+
+.search_right_icon {
+    height: 22px;
+    margin-left: 10px;
+    padding-top: 4px;
+}
+
+.right-icons {
+    margin-left: auto;
+}
+
+
+.nav_bottom {
+    margin-top: 22px;
+}
+
+/* Partie juste en dessous de la barre de recherche, indique une autre langue dispo pour Google */
+
+.info_language {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language {
+    color: #bdc1c6;
+    font-size: 14px;
+}
+
+/* Partie vie du corps du site */
+
+.low_page {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 558px;
+}
+
+.empty_space {
+    flex-grow: 1;
+    height: 80%;
+    width: 100%;
+    padding-top: 200px;
+}
+
+
+/* Pied de page du site */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #171717;
+    
+}
+
+.low_nav {
+    padding: 4px 20px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #3c4043;
+}
+
+.country {
+    font-size: 18px;
+    color: #999da2;
+    padding-left: 20px;
+    padding-top: 12px;
+  }
+
+.bottom_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #999da2;
+}
+
+.low_left_menu {
+    display: flex;
+}
+
+.item_low_left{
+    padding: 8px;
+  }
+
+.item_low_left a {
+    text-decoration: none;
+    color: #999da2
+}
+
+.item_low_left a:hover {
+    text-decoration: underline;
+}
+
+
+
+.low_right_menu {
+    display: flex;
+}
+
+.item_low_right {
+    padding: 8px;
+}
+
+
+.item_low_right a {
+    text-decoration: none;
+    color: #999da2
+}
+
+.item_low_right a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
